@@ -11689,9 +11689,17 @@ pre .code {
   margin-top: 10px;
 }
 
-
-.img-project{
+.img-project-s{
+  width: 50%;
   margin-top: 20px;
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
+.img-project-l{
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
