@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,10 +52,8 @@
     <script type="text/javascript" src="js/menu.js"></script>
 
     <!-- Main styles of this template -->
-    <!-- <link href="css/style.min.css?v=1.0.0" rel="stylesheet"> -->
+    <link href="css/style.min.css?v=1.0.0" rel="stylesheet">
 
-    <!-- Custom CSS. Input here your changes -->
-    <!-- <link href="css/custom.css" rel="stylesheet"> -->
 
 </head>
 
@@ -83,7 +82,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                        <a href="index.html#portfolio" class="nav-link-active">Portfolio</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="index.html#contact" class="nav-link">Contact</a>
@@ -97,14 +96,6 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="breadcrumb">
-                        <li><a href="#">My</a></li>
-                        <li><p>Portfolio</p></li>
-                    </ul>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12">
                     <h1>Behavior Driven Development - Kayak</h1>
@@ -131,18 +122,18 @@
                             <hr class="title-underline">
 
                             <ul class="project-content">
-                                <h4>OVERVIEW</h4>
-                                    <li> Website Tested: https://www.kayak.com</li>
-                                    <li> Source Code Management Tool: Github via SourceTree</li>
-                                    <li> Open-source testing framework: Cucumber</li>
-                                    <li> IDE: Eclipse</li>
-                                    <li> Language: Java</li>
-                                    <li> Testing Technique: Behavior-Driven Development (BDD)</li>
-                                    <li> Automation Testing Tool: Selenium WebDriver</li>
+                                <h2>OVERVIEW</h2>
+                                    <li> <b>Website Tested:</b> https://www.kayak.com</li>
+                                    <li> <b>Source Code Management Tool:</b> Github via SourceTree</li>
+                                    <li> <b>Open-source testing framework:</b> Cucumber</li>
+                                    <li> <b>IDE:</b> Eclipse</li>
+                                    <li> <b>Language:</b> Java</li>
+                                    <li> <b>Testing Technique:</b> Behavior-Driven Development (BDD)</li>
+                                    <li> <b>Automation Testing Tool:</b> Selenium WebDriver</li>
                             </ul>
 
                             <ul class="project-content">
-                                <h4>PROJECT</h4>
+                                <h2>PROJECT</h2>
                                 <p>This is a bit challenging for me because Kayak is a dynamic website that contains mutable data, 
                                     and the web elements always change with every request to the website. Also, I have to deal with 
                                     multiple windows that link to Kayak’s partner websites such as hotel.com. The project overview 
@@ -151,44 +142,44 @@
                             </ul>   
 
                             <ul class="project-content">
-                            <h4>FRAMEWORK DESIGN</h4>
-                                <li>Unit Testing Framework: Cucumber – to control flow and assert data.
+                            <h2>FRAMEWORK DESIGN</h2>
+                                <li><b>Unit Testing Framework:</b> Cucumber – to control flow and assert data.
                                     We know that Cucumber was developed to make it easier for developers, 
                                     testers, and business management teams to work together on behavior-driven
                                      development projects. It is based on the principle that tests should be written 
                                      in a language everyone on the team can understand. In this project, 
                                      I use Cucumber testing and there are a few things that I have to set up.</li>
-                                        <ul>- feature file or a file with a .feature extension that contains a description 
+                                        <ul><b>- feature file</b> or a file with a .feature extension that contains a description 
                                             of the feature and individual scenarios I test. Gherkin syntax will be used here 
                                             and each scenario should include the Given, When Then that everyone can understand 
                                             and be on the same page. In this example, I also use a set of data to test 
                                             the process that you can see in the Examples table.</ul>
-                                            <img class="img-project" src="assets/imgs/port2_projectDetail1.jpg" width: 70%>  
-                                        <ul>- Step definitions package that contains the class file(s) with a small piece of code 
+                                            <img class="img-project-m" src="assets/imgs/port2_projectDetail1.jpg" width: 70%>  
+                                        <ul><b>- Step definitions package</b> that contains the class file(s) with a small piece of code 
                                             in java method with an expression that links it to one or more Gherkin steps in the 
                                             feature file. When Cucumber executes a Gherkin step in a scenario, it will look for 
                                             a matching Step Definition to execute.</ul>
-                                            <img class="img-project" src="assets/imgs/port2_projectDetail2.jpg" width: 30%>
-                                            <img class="img-project" src="assets/imgs/port2_projectDetail3.jpg" width: 70%>
+                                            <img class="img-project-s" src="assets/imgs/port2_projectDetail2.jpg" width: 30%>
+                                            <img class="img-project-m" src="assets/imgs/port2_projectDetail3.jpg" width: 70%>
 
-                                        <ul>-	Test Runner will be used for running tests for Cucumber. In the test runner file 
+                                        <ul><b>-	Test Runner</b> will be used for running tests for Cucumber. In the test runner file 
                                             contains the path of the feature file and step definition file that we want to execute. 
                                             In my runner file, I imported “cucumber-junit” to execute cucumber scenarios. 
                                             I am using plugin of “pretty” and “html” to be my test result format, indicating feature 
                                             file path that glue or match with Step Definitions. I have dryRun  (= true) for giving me 
                                             a way to quickly scan your features without actually running them. </ul>
-                                            <img class="img-project" src="assets/imgs/port2_projectDetail4.jpg" width: 30%>
-                                        <ul>Also, I set monochrome = true to specify the console output from Cucumber in a readable format. 
+                                            <img class="img-project-m" src="assets/imgs/port2_projectDetail4.jpg" width: 30%>
+                                        <ul>Also, I set <b>monochrome</b> = true to specify the console output from Cucumber in a readable format. 
                                             And I can use tags to specify to execute only the feature file(s) that was tagged.</ul>
-                                            <img class="img-project" src="assets/imgs/port2_projectDetail5.jpg" width: 80%>
+                                            <img class="img-project-l" src="assets/imgs/port2_projectDetail5.jpg" width: 80%>
 
-                                <li>Maven - to manage dependencies.</li>
-                                <li>Page Object Model (POM) – to create an object repository for storing all web elements. 
+                                <li><b>Maven</b> - to manage dependencies.</li>
+                                <li><b>Page Object Model (POM)</b> – to create an object repository for storing all web elements. 
                                     Each web page of an application is considered a file class and each class file contain only corresponding web page elements.</li>
-                                <li>Page Factory – using @FindBy to locate and declare web elements using different locators</li>
-                                <li>Utilities package – to reuse utility classes that can be used across different classes of the framework. For example</li>
-                                <li>property file – to maintain the input data in the test scripts. In this file, data is stored as Key-Value pairs, so we can access any data in this file by using the key</li>
-                                <li>xml file – to easily control the execution of tests by only putting all the test cases together and running them under one file</li>
+                                <li><b>Page Factory</b> – using @FindBy to locate and declare web elements using different locators</li>
+                                <li><b>Utilities package</b> – to reuse utility classes that can be used across different classes of the framework. For example</li>
+                                <li><b>property file</b> – to maintain the input data in the test scripts. In this file, data is stored as Key-Value pairs, so we can access any data in this file by using the key</li>
+                                <li><b>xml file</b> – to easily control the execution of tests by only putting all the test cases together and running them under one file</li>
                             </ul> 
                         </article>
                         <article class="post-video">
@@ -201,11 +192,11 @@
         
                         </article>            
                         <ul class="pagination pagination-lg">
-                            <li><a href="#">«</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">»</a></li>
+                            <li><a href="fitnessAvenue_portfolio.html">«</a></li>
+                            <li><a href="fitnessAvenue_portfolio.html">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="e2eOnlineShop_portfolio.html">3</a></li>
+                            <li><a href="e2eOnlineShop_portfolio.html">»</a></li>
                         </ul>
                     </div>
                 </div>

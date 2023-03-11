@@ -19,19 +19,21 @@
     <link href="bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet"> 
 
     <!-- Load jQuery -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+    <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- <script src="bootstrap/js/ie-emulation-modes-warning.js"></script> -->
-    <!-- <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+    <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     
     <!-- John Doe CSS -->
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,10 +53,8 @@
     <script type="text/javascript" src="js/menu.js"></script>
 
     <!-- Main styles of this template -->
-    <!-- <link href="css/style.min.css?v=1.0.0" rel="stylesheet"> -->
+    <link href="css/style.min.css?v=1.0.0" rel="stylesheet">
 
-    <!-- Custom CSS. Input here your changes -->
-    <!-- <link href="css/custom.css" rel="stylesheet"> -->
 
 </head>
 
@@ -83,7 +83,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                        <a href="index.html#portfolio" class="nav-link-active">Portfolio</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="index.html#contact" class="nav-link">Contact</a>
@@ -97,14 +97,6 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="breadcrumb">
-                        <li><a href="#">My</a></li>
-                        <li><p>Portfolio</p></li>
-                    </ul>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12">
                     <h1>Test Driven Development - FitnessAvenue</h1>
@@ -131,44 +123,44 @@
                             <hr class="title-underline">
 
                             <ul class="project-content">
-                                <h4>OVERVIEW</h4>
-                                    <li> Website Tested: https://www.fitnessavenue.ca</li>
-                                    <li> Source Code Management Tool: Github via SourceTree</li>
-                                    <li> IDE: IntelliJ IDEA CE</li>
-                                    <li> Language: Java</li>
-                                    <li> Automation Testing Tool: Selenium WebDriver</li>
+                                <h2>OVERVIEW</h2>
+                                    <li> <b>Website Tested:</b> https://www.fitnessavenue.ca</li>
+                                    <li> <b>Source Code Management Tool:</b> Github via SourceTree</li>
+                                    <li> <b>IDE:</b> IntelliJ IDEA CE</li>
+                                    <li> <b>Language:</b> Java</li>
+                                    <li> <b>Automation Testing Tool:</b> Selenium WebDriver</li>
                             </ul>
 
                             <ul class="project-content">
-                                <h4>PROJECT</h4>
+                                <h2>PROJECT</h2>
                                 <p>This project is using TDD framework to test whether the web browser is functioning correctly. For instance, users can get a discount when using a valid coupon code on their order. So, I wrote a process flow that would shop with LOVE1o code to get the 10% discount.</p>
                                 <img class="img-project" src="assets/imgs/port1_projectDetail1.jpg"> 
                             </ul>   
 
                             <ul class="project-content">
-                            <h4>FRAMEWORK DESIGN</h4>
-                                <li>Unit Testing Framework: TestNG – to control flow and assert data</li>
-                                <li>Maven - to manage dependencies and also run the tests as mvn goals from terminal</li>
-                                <li>Page Object Model (POM) – to create an object repository for storing all web elements. Each web page of an application is considered a file class and each class file contain only corresponding web page elements. It helps to Readability and reliability of scripts, Code Reusability, and Easy Maintenance</li>
-                                <li>Page Factory – using @FindBy to locate and declare web elements using different locators</li>
-                                <li>Utilities package – to reuse utility classes that can be used across different classes of the framework. For example</li>
-                                    <ul>BaseClass - to share the web driver instance between different classes (Singleton Driver)</ul>
-                                    <ul>CommonMethods – to store the methods used across the project</ul>
-                                    <ul>Constants - to store the fixed data that code into my test scripts</ul>
-                                    <ul>Listeners – to log and report that can come in handy to debug failures in the script at any later stage</ul>
-                                    <ul>PageInitializer – to initialize the Page Objects</ul>
-                                <li>property file – to maintain the input data in the test scripts. In this file, data is stored as Key-Value pairs, so we can access any data in this file by using the key</li>
-                                <li>xml file – to easily control the execution of tests by only putting all the test cases together and running them under one file</li>
+                            <h2>FRAMEWORK DESIGN</h2>
+                                <li><b>Unit Testing Framework:</b> TestNG – to control flow and assert data</li>
+                                <li><b>Maven</b> - to manage dependencies and also run the tests as mvn goals from terminal</li>
+                                <li><b>Page Object Model (POM)</b> – to create an object repository for storing all web elements. Each web page of an application is considered a file class and each class file contain only corresponding web page elements. It helps to Readability and reliability of scripts, Code Reusability, and Easy Maintenance</li>
+                                <li><b>Page Factory</b> – using @FindBy to locate and declare web elements using different locators</li>
+                                <li><b>Utilities package</b> – to reuse utility classes that can be used across different classes of the framework. For example</li>
+                                    <ul><b>BaseClass</b> - to share the web driver instance between different classes (Singleton Driver)</ul>
+                                    <ul><b>CommonMethods</b> – to store the methods used across the project</ul>
+                                    <ul><b>Constants</b> - to store the fixed data that code into my test scripts</ul>
+                                    <ul><b>Listeners</b> – to log and report that can come in handy to debug failures in the script at any later stage</ul>
+                                    <ul><b>PageInitializer</b> – to initialize the Page Objects</ul>
+                                <li><b>property file</b> – to maintain the input data in the test scripts. Data in this file is stored as Key-Value pairs, so we can access any data in this file by using the key</li>
+                                <li><b>xml file</b> – to easily control the execution of tests by only putting all the test cases together and running them under one file</li>
                            
                             </ul> 
 
                             <ul class="project-content">
-                            <H4>Object Oriented Programming System or OOPS concept in my Automation Framework</H4>
-                                <li>Abstraction: In PageObjects package, I write locators and methods in Page Class. These locators can be utilized in tests but the implementation of the methods can’t be seen. That means the implementations of the locators were hidden from the tests.</li>
-                                <li>Interface: One sample using Interface is  “WebDriver driver = new ChromeDriver();” in my BaseClass, I use Selenium WebDriver to initialize Chrome browser. It means I created a reference variable (driver) of the interface (WebDriver) and created an Object. Here WebDriver is an Interface and ChromeDriver is a class.</li>
-                                <li>Inheritance: I create a Base Class in the Automation Framework to initialize WebDriver interface, WebDriver waits, and Property files, in the Base Class. Then, I extend the BaseClass in PageInitializer class, extend PageInitializer class in CommonMethods class, and then extend CommonMethods in other classes such as Page classes and Test classes to acquire the instance variables and functionalities of another class that has been extended.</li>
-                                <li>Encapsulation: To bind code and variables together in a single unit, In Page Object Model classes, I declare the data members using @FindBy and initialization of data members will be done using Constructor to utilize those in methods.</li>
-                                <li>Polymorphism: To perform a task in multiple ways, I use the combination of Method Overloading such as Implicit wait to use different time stamps, and Method Overriding such as get and navigate methods of different drivers.</li>                            
+                            <h2>Object Oriented Programming System or OOPS concept in my Automation Framework</H2>
+                                <li><b>Abstraction:</b> In PageObjects package, I write locators and methods in Page Class. These locators can be utilized in tests but the implementation of the methods can’t be seen. That means the implementations of the locators were hidden from the tests.</li>
+                                <li><b>Interface:</b> One sample using Interface is  “WebDriver driver = new ChromeDriver();” in my BaseClass, I use Selenium WebDriver to initialize Chrome browser. It means I created a reference variable (driver) of the interface (WebDriver) and created an Object. Here WebDriver is an Interface and ChromeDriver is a class.</li>
+                                <li><b>Inheritance:</b> I create a Base Class in the Automation Framework to initialize WebDriver interface, WebDriver waits, and Property files, in the Base Class. Then, I extend the BaseClass in PageInitializer class, extend PageInitializer class in CommonMethods class, and then extend CommonMethods in other classes such as Page classes and Test classes to acquire the instance variables and functionalities of another class that has been extended.</li>
+                                <li><b>Encapsulation:</b> To bind code and variables together in a single unit, In Page Object Model classes, I declare the data members using @FindBy and initialization of data members will be done using Constructor to utilize those in methods.</li>
+                                <li><b>Polymorphism:</b> To perform a task in multiple ways, I use the combination of Method Overloading such as Implicit wait to use different time stamps, and Method Overriding such as get and navigate methods of different drivers.</li>                            
                             </ul>
                         </article>
                         <article class="post-video">
@@ -183,9 +175,9 @@
                         <ul class="pagination pagination-lg">
                             <li><a href="#">«</a></li>
                             <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">»</a></li>
+                            <li><a href="kayak_portfolio.html">2</a></li>
+                            <li><a href="e2eOnlineShop_portfolio.html">3</a></li>
+                            <li><a href="e2eOnlineShop_portfolio.html">»</a></li>
                         </ul>
                     </div>
                 </div>
