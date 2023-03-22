@@ -1452,7 +1452,10 @@ a:focus {
 }
 
 .blog-listing .img-thumbnail {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog-listing .title-underline {

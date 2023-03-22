@@ -502,7 +502,7 @@ mark,
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -11694,6 +11694,8 @@ pre .code {
   margin-top: 20px;
   margin-left: 50px;
   margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
 }
 
 .img-project-m{
@@ -11701,6 +11703,8 @@ pre .code {
   margin-top: 20px;
   margin-left: 50px;
   margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
 }
 
 .img-project-l{
@@ -11708,5 +11712,7 @@ pre .code {
   margin-top: 20px;
   margin-left: 50px;
   margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
 }
 
